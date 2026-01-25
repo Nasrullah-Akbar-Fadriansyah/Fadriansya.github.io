@@ -1,18 +1,29 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* General */
 body {
+  overflow-x: hidden;
+  width: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: #121212; /* Dark background */
-  color: #f8f9fa; /* Cleaner white text */
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navbar */
 .navbar {
   transition: background-color 0.5s ease;
   background-color: transparent;
+  overflow-x: clip;
 }
 
 .navbar.scrolled {
@@ -36,6 +47,11 @@ body {
 .nav-link:hover,
 .navbar-brand:hover {
   color: #20c997 !important; /* New Teal accent */
+}
+
+.navbar-collapse {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Jumbotron */
@@ -66,12 +82,13 @@ body {
 
 #typing-text {
   font-size: 2rem;
-  color: #20c997; /* New Teal accent */
+  color: #20c997;
   font-weight: 500;
   border-right: 0.1em solid #20c997;
-  white-space: nowrap;
   overflow: hidden;
   margin: 0 auto;
+  /* display: inline-block;
+  word-break: break-word; */
   animation:
     typing 3.5s steps(40, end),
     blink-caret 0.75s step-end infinite;
@@ -471,15 +488,18 @@ footer p {
 @media (max-width: 576px) {
   .jumbotron {
     padding: 5rem 1rem;
+    text-align: center;
   }
 
   .jumbotron .display-3,
   .jumbotron .arul {
-    font-size: 2rem;
+    font-size: 1.5rem !important;
+    line-height: 1.2;
+    word-wrap: break-word;
   }
 
   #typing-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .about-item {
