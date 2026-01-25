@@ -21,7 +21,8 @@ body {
 
 /* Jumbotron */
 .jumbotron {
-  padding: 3rem;
+  padding: 6rem;
+  height: 100vh;
   background-color: #b4ccf3;
 }
 
@@ -49,8 +50,9 @@ body {
 }
 
 /* Services Section */
-.Services {
+#about {
   padding: 6rem;
+  height: 100vh;
 }
 
 .blok-1 {
@@ -58,7 +60,7 @@ body {
 }
 
 /* Portfolio Section */
-.Portfolio {
+#portfolio {
   padding: 6rem;
   background-color: #b4ccf3;
 }
@@ -417,4 +419,31 @@ footer {
 
 .footer-icon a svg:hover {
   fill: rgb(0, 255, 34);
+}
+
+/* Certificates Section */
+#certificates {
+  padding: 6rem;
+  background-color: rgb(113, 151, 233) !important;
+}
+
+#certificates .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certificates .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#certificates img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  min-height: 400px;
 }

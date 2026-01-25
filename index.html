@@ -18,37 +18,39 @@
 </head>
 
 <body>
-
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary" data-aos="fade-down" data-aos-easing="linear"
     data-aos-duration="1500">
-    <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-      <a class="navbar-brand nama-saya" href='img/myfoto.jpg'>Nasrullah</a>
+    <div class="container">
+      <a class="navbar-brand nama-saya" href="#home">Nasrullah</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">
-                <button type="button" class="btn btn-outline-dark">About me</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">
-                <button type="button" class="btn btn-outline-dark">Portfolio</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">
-                <button type="button" class="btn btn-outline-dark">Skills</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">
-                <button type="button" class="btn btn-outline-dark">Contact</button></a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              <button type="button" class="btn btn-outline-dark">About Me</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">
+              <button type="button" class="btn btn-outline-dark">Portfolio</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">
+              <button type="button" class="btn btn-outline-dark">Skills</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <button type="button" class="btn btn-outline-dark">Contact</button>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -81,30 +83,44 @@
   <!-- profile end -->
 
   <!-- ABOUT ME -->
-  <div class="Services">
+  <section id="about" class="py-5">
     <div class="container">
       <div class="row text-center mb-4">
         <div class="col" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
-          <h2>About Me</h2>
+          <h2 class="fw-bold">About me</h2>
+          <p class="text-muted mt-2">Perjalanan, motivasi, dan semangat saya</p>
         </div>
       </div>
-      <div class="row justify-content-around fs-5 blok-1">
-        <div class="col-md-4 mb-4" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="50">
-          <p>I was born in Jakarta. Since childhood, I have had an interest in the world of programming. I continue to
-            learn about programming from many people, I want to one day create a system that makes things easier for
-            everyone.</p>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="200">
-          <p>I am an individual who is passionate, diligent and never gives up. I have friends and relatives who
-            continue to support me to pursue my dreams, they have both positive and negative impacts on me.</p>
+      <div class="row justify-content-center fs-5">
+        <div class="col-md-10" data-aos="fade-up" data-aos-duration="1200">
+          <p>
+            Nama saya <strong>Nasrullah Akbar</strong>. Saya berasal dari Jakarta dan sejak usia dini telah terpikat
+            oleh
+            dunia teknologi, terutama dalam bidang pemrograman. Rasa ingin tahu yang besar membuat saya terus belajar
+            dan bereksperimen dengan berbagai proyek kecil hingga akhirnya mampu membangun sistem yang bermanfaat untuk
+            banyak orang.
+          </p>
+          <p>
+            Saya percaya bahwa teknologi bukan hanya alat, tetapi juga jembatan untuk memecahkan masalah nyata. Bagi
+            saya, tantangan dalam coding bukan hal yang menakutkan, melainkan kesempatan untuk tumbuh.
+          </p>
+          <p>
+            Di balik semua pencapaian yang saya raih, ada dukungan dari orang-orang terdekat — keluarga, sahabat, dan
+            komunitas yang selalu memberi semangat. Mereka membantu saya tetap rendah hati dan terus berproses menjadi
+            versi terbaik dari diri saya.
+          </p>
+          <p>
+            Saat ini, saya fokus mengembangkan berbagai proyek di bidang pemrograman dengan pendekatan yang sederhana,
+            efisien, dan dapat memberikan dampak nyata bagi banyak orang.
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- AKHIR ABOUT ME -->
 
   <!-- PORTFOLIO -->
-  <div class="Portfolio">
+  <section id="portfolio">
     <div class="container">
       <div class="row text-center mb-3">
         <div class="col" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
@@ -122,7 +138,7 @@
           <div class="card-body">
             <h5 class="card-title">My logo</h5>
             <p class="card-text">This is one of the logos that I have, I got the logo via the internet</p>
-            <a href="img/foto-1.png" class="button_portfolio"><span></span><span></span><span></span><span></span>Go
+            <a href="img/foto-1.jpg" class="button_portfolio"><span></span><span></span><span></span><span></span>Go
               somewhere</a>
           </div>
         </div>
@@ -156,7 +172,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- AKHIR PORTFOLIO -->
 
   <!-- SKILLS -->
@@ -235,7 +251,7 @@
     <div class="contact main-container">
       <div class="contact-left" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="100"
         data-aos-duration="2000">
-        <form class="contact-form" action="https://formspree.io/f/xnqeplro" method="post">
+        <form id="contact-form" class="contact-form">
           <div>
             <input type="text" placeholder="Name" id="name" name="name" required><br>
             <span id="name-error" class="error"></span>
@@ -245,10 +261,10 @@
             <span id="email-error" class="error"></span>
           </div>
           <div>
-            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
           </div>
           <div>
-            <button class="btn-submit">Send message</button>
+            <button type="submit" class="btn-submit">Send message</button>
           </div>
         </form>
       </div>
@@ -319,8 +335,58 @@
         <!-- END CONTACT ITEM 4 -->
       </div>
     </div>
+    <div id="response"></div>
   </section>
   <!-- AKHIR CONTACT -->
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">📜 Certificates & Achievements</h2>
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <img src="img/foto-1.jpg" class="card-img-top" alt="Dicoding Certificate">
+            <div class="card-body">
+              <h5 class="card-title">Networking Academy</h5>
+              <p class="card-text">CCNA | Jan 2025</p>
+              <a href="sertifikat/nasrullah_CCNA_cisco.pdf" target="_blank" class="btn btn-outline-primary btn-sm">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <img src="img/bootcamp.jpg" class="card-img-top" alt="ESP32 Project Award">
+            <div class="card-body">
+              <h5 class="card-title">Best IoT Project</h5>
+              <p class="card-text">BSI Bootcamp | July 2025</p>
+              <a href="img/bootcamp.jpg" target="_blank" class="btn btn-outline-primary btn-sm">View Image</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <img src="img/foto-1.jpg" class="card-img-top" alt="GitHub Contribution Badge">
+            <div class="card-body">
+              <h5 class="card-title">100+ Commits</h5>
+              <p class="card-text">GitHub Open Source | 2023</p>
+              <a href="https://github.com/fadriansya" target="_blank" class="btn btn-outline-primary btn-sm">View
+                Profile</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END CERTIFICATES -->
 
   <!-- FOOTER -->
   <footer>
@@ -358,6 +424,35 @@
   </script>
 
   <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOw0_xC2TRWAw4tpBNKbzZ84cMJ-G6aSgZFHAB6lR6s11Y2H4hSs-JNEoeMb9A5okQ/exec'; // Ganti dengan URL Web App kamu
+    const form = document.getElementById('contact-form');
+    const responseBox = document.getElementById('response');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault(); // Mencegah reload
+      const formData = new FormData(form);
+
+      fetch(scriptURL, {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => response.text())
+        .then(result => {
+          responseBox.innerHTML = "✅ Data berhasil dikirim!";
+          form.reset();
+        })
+        .catch(error => {
+          responseBox.innerHTML = "❌ Gagal mengirim data.";
+          console.error('Error!', error.message);
+        });
+    });
+  </script>
+
+
 </body>
 
 </html>
