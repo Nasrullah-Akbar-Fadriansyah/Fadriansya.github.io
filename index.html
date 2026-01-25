@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio|Nasrullah</title>
+  <title>Portfolio | Nasrullah</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,10 +24,9 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" data-aos="fade-down" data-aos-easing="linear"
-    data-aos-duration="1500">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
-      <a class="navbar-brand nama-saya" href="#home">Nasrullah</a>
+      <a class="navbar-brand" href="hbd.html">Nasrullah</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,24 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">
-              <button type="button" class="btn btn-outline-dark">About Me</button>
-            </a>
+            <a class="nav-link" href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">
-              <button type="button" class="btn btn-outline-dark">Portfolio</button>
-            </a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">
-              <button type="button" class="btn btn-outline-dark">Skills</button>
-            </a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">
-              <button type="button" class="btn btn-outline-dark">Contact</button>
-            </a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -57,25 +53,20 @@
   <!-- NAVBAR END -->
 
   <!-- profile -->
-  <section class="jumbotron text-center">
+  <section id="home" class="jumbotron text-center">
     <img src="img/myfoto.jpg" alt="Nasrullah" width="200" class="rounded-circle" data-aos="fade-down"
-      data-aos-easing="ease-in-out" data-aos-duration="1000" data-tilt data-tilt-max="15" data-tilt-speed="3000"
-      data-tilt-perspective="600">
-    <div class="wrap">
+      data-aos-duration="1000" data-tilt>
+    <div class="wrap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
       <div class="typing">
-        <h1 class="display-3 text-primary welcome" data-aos="fade-left" data-aos-anchor="#example-anchor"
-          data-aos-offset="500" data-aos-duration="3000" data-aos-delay="100">
+        <h1 class="display-3 welcome">
           Welcome To My Portfolio Website
         </h1>
-        <h1 class="text-primary arul" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500"
-          data-aos-duration="2000" data-aos-delay="100">
-          Nasrullah Akbar
+        <h1 class="arul">
+          Nasrullah Akbar Fadriansyah
         </h1>
         <div class="container">
-          <h1 class="text text-center text-danger" data-aos="fade-down-right" data-aos-duration="2000"
-            data-aos-delay="100">I am</h1>
-          <div id="typing-text">text berada disini
-          </div>
+          <h1 class="text text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
+            style="font-size: 1.5rem; color: white;">I am <span id="typing-text"></span></h1>
         </div>
       </div>
     </div>
@@ -85,89 +76,116 @@
   <!-- ABOUT ME -->
   <section id="about" class="py-5">
     <div class="container">
-      <div class="row text-center mb-4">
-        <div class="col" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
-          <h2 class="fw-bold">About me</h2>
-          <p class="text-muted mt-2">Perjalanan, motivasi, dan semangat saya</p>
+      <div class="row text-center mb-5">
+        <div class="col" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="fw-bold">About Me</h2>
+          <p class="text-muted">On Going Progress</p>
         </div>
       </div>
-      <div class="row justify-content-center fs-5">
-        <div class="col-md-10" data-aos="fade-up" data-aos-duration="1200">
-          <p>
-            Nama saya <strong>Nasrullah Akbar</strong>. Saya berasal dari Jakarta dan sejak usia dini telah terpikat
-            oleh
-            dunia teknologi, terutama dalam bidang pemrograman. Rasa ingin tahu yang besar membuat saya terus belajar
-            dan bereksperimen dengan berbagai proyek kecil hingga akhirnya mampu membangun sistem yang bermanfaat untuk
-            banyak orang.
-          </p>
-          <p>
-            Saya percaya bahwa teknologi bukan hanya alat, tetapi juga jembatan untuk memecahkan masalah nyata. Bagi
-            saya, tantangan dalam coding bukan hal yang menakutkan, melainkan kesempatan untuk tumbuh.
-          </p>
-          <p>
-            Di balik semua pencapaian yang saya raih, ada dukungan dari orang-orang terdekat — keluarga, sahabat, dan
-            komunitas yang selalu memberi semangat. Mereka membantu saya tetap rendah hati dan terus berproses menjadi
-            versi terbaik dari diri saya.
-          </p>
-          <p>
-            Saat ini, saya fokus mengembangkan berbagai proyek di bidang pemrograman dengan pendekatan yang sederhana,
-            efisien, dan dapat memberikan dampak nyata bagi banyak orang.
-          </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-9" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="about-grid">
+            <div class="about-item">
+              <div class="about-emoji">🔭</div>
+              <div class="about-text">
+                <h5>Currently working on:</h5>
+                <p>A campus mobile app project called <strong>GoTrush</strong> (an online waste collection service app),
+                  with an idea similar to ride-hailing apps. It's really exciting!</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-emoji">🌱</div>
+              <div class="about-text">
+                <h5>Currently learning:</h5>
+                <p>The <strong>Flutter Framework</strong> and <strong>Dart</strong> language. Still in the exploration
+                  stage, wish me luck! 🫡</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-emoji">👯</div>
+              <div class="about-text">
+                <h5>Open to collaborate on:</h5>
+                <p>Challenging Flutter projects or brainstorming cool ideas for on-demand applications. <em>Hit me
+                    up!</em>
+                  📬</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-emoji">❓</div>
+              <div class="about-text">
+                <h5>Looking for help with:</h5>
+                <p>Tips on how to optimize UI/UX in Flutter to make it smooth or handling complex API integrations in
+                  mobile apps. 😅</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-emoji">💬</div>
+              <div class="about-text">
+                <h5>Ask me about:</h5>
+                <p>My experience coding while participating in competitions! I won <strong>2nd place</strong> in the
+                  campus <strong>IT Bootcamp IoT Competition</strong>, and I'm happy to share! 🏆</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-emoji">⚡</div>
+              <div class="about-text">
+                <h5>Fun fact:</h5>
+                <p>Besides coding, my best healing is <strong>playing games</strong> and continuously
+                  <strong>learning</strong>
+                  new things. <em>Developer life is a balanced life!</em> ✨
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- AKHIR ABOUT ME -->
 
-  <!-- PORTFOLIO -->
-  <section id="portfolio">
+  <!-- PORTOFOLIO -->
+  <section id="portfolio" class="py-5 bg-dark-subtle">
     <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
+      <div class="row text-center mb-5">
+        <div class="col" data-aos="fade-up" data-aos-duration="1000">
           <h3>My Portfolio</h3>
         </div>
       </div>
-    </div>
-    <div class="row justify-content-center">
+      <div class="row justify-content-center">
 
-      <!-- CARD 1 -->
-      <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="1000" data-tilt data-tilt-max="15"
-        data-tilt-speed="1000" data-tilt-perspective="600">
-        <div class="card">
-          <img src="img/foto-1.jpg" alt="foto-1">
-          <div class="card-body">
-            <h5 class="card-title">My logo</h5>
-            <p class="card-text">This is one of the logos that I have, I got the logo via the internet</p>
-            <a href="img/foto-1.jpg" class="button_portfolio"><span></span><span></span><span></span><span></span>Go
-              somewhere</a>
+        <!-- CARD 1 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-tilt>
+          <div class="card">
+            <img src="img/cvnasrullah.jpg" class="card-img-top" alt="foto-1">
+            <div class="card-body text-center">
+              <h5 class="card-title">My CV</h5>
+              <p class="card-text">This is one of the logos that I have, I got the logo via the internet.</p>
+              <a href="img/cvnasrullah.jpg" class="button_portfolio" target="_blank">View Image</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- CARD 2 -->
-      <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="2000" data-tilt data-tilt-max="15"
-        data-tilt-speed="1000" data-tilt-perspective="600">
-        <div class="card">
-          <img src="img/foto-2.jpg" class="card-img-top" alt="foto-2">
-          <div class="card-body">
-            <h5 class="card-title">Memory</h5>
-            <p class="card-text">This is one of my memorable photos with my university friends</p>
-            <a href="img/foto-2.jpg" class="button_portfolio"><span></span><span></span><span></span><span></span>Go
-              somewhere</a>
+        <!-- CARD 2 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-tilt>
+          <div class="card">
+            <img src="img/foto-2.jpg" class="card-img-top" alt="foto-2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Memory</h5>
+              <p class="card-text">This is one of my memorable photos with my university friends.</p>
+              <a href="img/foto-2.jpg" class="button_portfolio" target="_blank">View Image</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- CARD 3 -->
-      <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="3000" data-tilt data-tilt-max="15"
-        data-tilt-speed="1000" data-tilt-perspective="900">
-        <div class="card">
-          <img src="img/foto-3.jpg" class="card-img-top" alt="foto-3">
-          <div class="card-body">
-            <h5 class="card-title">Scan ME</h5>
-            <p class="card-text">You can scan the image above to see my social media</p>
-            <a href="img/foto-3.jpg" class="button_portfolio"><span></span><span></span><span></span><span></span>Go
-              somewhere</a>
+        <!-- CARD 3 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-tilt>
+          <div class="card">
+            <img src="img/foto-3.jpeg" class="card-img-top" alt="foto-3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Scan Me</h5>
+              <p class="card-text">You can scan the image above to see my social media.</p>
+              <a href="img/foto-3.jpeg" class="button_portfolio" target="_blank">View Image</a>
+            </div>
           </div>
         </div>
       </div>
@@ -176,11 +194,16 @@
   <!-- AKHIR PORTFOLIO -->
 
   <!-- SKILLS -->
-  <div id="skills">
-    <div class="skills-main-container text-center">
-      <h1 class="section-title" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Skills</h1>
+  <section id="skills">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="fw-bold">Skills & Education</h2>
+        </div>
+      </div>
       <div class="skills-grid">
-        <div class="skills-left" data-aos="zoom-in-right" data-aos-offset="200" data-aos-duration="2000">
+        <div class="skills-left" data-aos="fade-right" data-aos-duration="1000">
+          <h3 class="mb-4 text-center">Education</h3>
           <!-- BELAJAR 1 -->
           <div class="belajar">
             <div class="line">
@@ -220,136 +243,126 @@
           </div>
           <!-- END BELAJAR 3 -->
         </div>
-        <div class="skills-righ" data-aos="fade-left" data-aos-offset="200" data-aos-duration="2000">
-          <p>The following are several programming languages that I learned during my time in the world of programming
-          </p>
+        <div class="skills-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <h3 class="mb-4 text-center">Programming Languages</h3>
+          <p class="text-center">Here are some of the programming languages I've learned.</p>
           <div class="skills-list">
             <ul>
               <li>Python</li>
               <li>HTML</li>
               <li>CSS</li>
               <li>Javascript</li>
-              <li>AOS JS</li>
+              <li>PHP</li>
             </ul>
 
             <ul>
-              <li>Chatgpt</li>
               <li>C++</li>
-              <li>Typescript</li>
-              <li>Next JS</li>
+              <li>Flutter</li>
+              <li>Ai</li>
               <li>Bootstrap</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- END SKILLS -->
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="contact main-container">
-      <div class="contact-left" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="100"
-        data-aos-duration="2000">
-        <form id="contact-form" class="contact-form">
-          <div>
-            <input type="text" placeholder="Name" id="name" name="name" required><br>
-            <span id="name-error" class="error"></span>
-          </div>
-          <div>
-            <input type="email" placeholder="name@example.com" id="email" name="email" required>
-            <span id="email-error" class="error"></span>
-          </div>
-          <div>
-            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
-          </div>
-          <div>
-            <button type="submit" class="btn-submit">Send message</button>
-          </div>
-        </form>
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="fw-bold text-white">Contact Me</h2>
+        </div>
       </div>
-      <div class="contact-right" data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="100"
-        data-aos-duration="2000">
-        <!-- CONTACT ITEM 1 -->
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path
-                d="M12 1c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 6h-3.135c-.385.641-.798 1.309-1.232 2h3.131l.5 1h-4.264l-.344.544-.289.456h.558l.858 2h-7.488l.858-2h.479l-.289-.456-.343-.544h-2.042l-1.011-1h2.42c-.435-.691-.848-1.359-1.232-2h-3.135l-4 8h24l-4-8zm-12.794 6h-3.97l1.764-3.528 1.516 1.528h1.549l-.859 2zm8.808-2h3.75l1 2h-3.892l-.858-2z" />
-            </svg>
-          </div>
-          <div class="contact-item-detail">
-            <h4>Address</h4>
-            <p>Jakarta Barat, Kebon Jeruk</p>
-          </div>
-        </div>
-        <!-- END CONTACT ITEM 1 -->
-
-        <!-- CONTACT ITEM 2 -->
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path
-                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z" />
-            </svg>
-          </div>
-          <div class="contact-item-detail">
-            <h4>Phone</h4>
-            <p>0857-7977-8504</p>
-          </div>
-        </div>
-        <!-- END CONTACT ITEM 2 -->
-
-        <!-- CONTACT ITEM 3 -->
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path
-                d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z" />
-            </svg>
-          </div>
-          <div class="contact-item-detail">
-            <h4>Email</h4>
-            <p>nasrullahakbar18@gmail.com</p>
-          </div>
-        </div>
-        <!-- END CONTACT ITEM 3 -->
-
-        <!-- CONTACT ITEM 4 -->
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <div class="media">
-              <a href="https://www.instagram.com/arulaja04">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path
-                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z" />
-                </svg>
-              </a>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-main-container">
+            <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
+              <form id="contact-form" class="contact-form">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="name@example.com" id="email" name="email"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <textarea name="message" class="form-control" id="message" placeholder="Message" rows="5"
+                    required></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="btn-submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+            <div class="contact-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+              <!-- CONTACT ITEM 1 -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 1c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z" />
+                  </svg>
+                </div>
+                <div class="contact-item-detail">
+                  <h4>Address</h4>
+                  <p>Jakarta Barat, Kebon Jeruk</p>
+                </div>
+              </div>
+              <!-- END CONTACT ITEM 1 -->
+              <!-- CONTACT ITEM 2 -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z" />
+                  </svg>
+                </div>
+                <div class="contact-item-detail">
+                  <h4>Phone</h4>
+                  <p>0857-7977-8504</p>
+                </div>
+              </div>
+              <!-- END CONTACT ITEM 2 -->
+              <!-- CONTACT ITEM 3 -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z" />
+                  </svg>
+                </div>
+                <div class="contact-item-detail">
+                  <h4>Email</h4>
+                  <p>nasrullahakbar18@gmail.com</p>
+                </div>
+              </div>
+              <!-- END CONTACT ITEM 3 -->
             </div>
           </div>
-          <div class="contact-item-detail">
-            <h4>Instagram</h4>
-            <p>arulaja04</p>
-          </div>
         </div>
-        <!-- END CONTACT ITEM 4 -->
       </div>
     </div>
-    <div id="response"></div>
   </section>
   <!-- AKHIR CONTACT -->
 
   <!-- CERTIFICATES -->
-  <section id="certificates" class="py-5 bg-light">
+  <section id="certificates" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">📜 Certificates & Achievements</h2>
+      <div class="row text-center mb-5">
+        <div class="col" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="fw-bold">📜 Certificates & Achievements</h2>
+        </div>
+      </div>
       <div class="row">
 
         <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
           <div class="card shadow-sm h-100">
             <img src="img/foto-1.jpg" class="card-img-top" alt="Dicoding Certificate">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">Networking Academy</h5>
               <p class="card-text">CCNA | Jan 2025</p>
               <a href="sertifikat/nasrullah_CCNA_cisco.pdf" target="_blank" class="btn btn-outline-primary btn-sm">View
@@ -359,10 +372,10 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <div class="card shadow-sm h-100">
             <img src="img/bootcamp.jpg" class="card-img-top" alt="ESP32 Project Award">
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">Best IoT Project</h5>
               <p class="card-text">BSI Bootcamp | July 2025</p>
               <a href="img/bootcamp.jpg" target="_blank" class="btn btn-outline-primary btn-sm">View Image</a>
@@ -371,13 +384,14 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
           <div class="card shadow-sm h-100">
-            <img src="img/foto-1.jpg" class="card-img-top" alt="GitHub Contribution Badge">
-            <div class="card-body">
+            <img src="img/github.png" class="card-img-top" alt="GitHub Contribution Badge">
+            <div class="card-body text-center">
               <h5 class="card-title">100+ Commits</h5>
               <p class="card-text">GitHub Open Source | 2023</p>
-              <a href="https://github.com/fadriansya" target="_blank" class="btn btn-outline-primary btn-sm">View
+              <a href="https://github.com/Nasrullah-Akbar-Fadriansyah" target="_blank"
+                class="btn btn-outline-primary btn-sm">View
                 Profile</a>
             </div>
           </div>
@@ -391,18 +405,15 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-icons">
-      <a href="index.html"> <!-- KEMBALI KE HALAMAN AWAL -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
           <path
             d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998zm1.5 0c0-4.69 3.808-8.498 8.498-8.498s8.497 3.808 8.497 8.498-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498zm4.715-1.528s1.505-1.502 3.259-3.255c.147-.146.338-.219.53-.219s.384.073.53.219c1.754 1.753 3.259 3.254 3.259 3.254.145.145.217.336.216.527 0 .191-.074.383-.22.53-.293.293-.766.294-1.057.004l-1.978-1.978v6.694c0 .413-.336.75-.75.75s-.75-.337-.75-.75v-6.694l-1.978 1.979c-.29.289-.762.286-1.055-.007-.147-.146-.22-.338-.221-.53-.001-.19.071-.38.215-.524z"
             fill-rule="nonzero" />
         </svg>
       </a>
-      <h4>
-        DONE GAK BANG? DONEE
-      </h4>
     </div>
-    <p>&#169; 2024 - Made by Nasrullah</p>
+    <p>&#169; 2024 - Made with by Nasrullah</p>
   </footer>
   <!-- END FOOTER -->
 
@@ -420,7 +431,10 @@
   <!-- AOS JAVASCRIPT -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+    });
   </script>
 
   <script type="text/javascript" src="vanilla-tilt.min.js"></script>
@@ -428,26 +442,49 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxOw0_xC2TRWAw4tpBNKbzZ84cMJ-G6aSgZFHAB6lR6s11Y2H4hSs-JNEoeMb9A5okQ/exec'; // Ganti dengan URL Web App kamu
     const form = document.getElementById('contact-form');
-    const responseBox = document.getElementById('response');
 
     form.addEventListener('submit', e => {
       e.preventDefault(); // Mencegah reload
-      const formData = new FormData(form);
+      const submitButton = form.querySelector('.btn-submit');
+      submitButton.disabled = true;
+      submitButton.innerHTML = 'Sending...';
 
       fetch(scriptURL, {
         method: 'POST',
-        body: formData
+        body: new FormData(form)
       })
-        .then(response => response.text())
-        .then(result => {
-          responseBox.innerHTML = "✅ Data berhasil dikirim!";
+        .then(response => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Your message has been sent successfully.',
+          });
           form.reset();
+          submitButton.disabled = false;
+          submitButton.innerHTML = 'Send Message';
         })
         .catch(error => {
-          responseBox.innerHTML = "❌ Gagal mengirim data.";
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong! Please try again.',
+          });
           console.error('Error!', error.message);
+          submitButton.disabled = false;
+          submitButton.innerHTML = 'Send Message';
         });
     });
   </script>
