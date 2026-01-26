@@ -20,13 +20,16 @@
 
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
 </head>
 
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
-      <a class="navbar-brand" href="hbd.html">Nasrullah</a>
+      <a class="navbar-brand" href="hbd.html">NAF</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,27 +55,30 @@
   </nav>
   <!-- NAVBAR END -->
 
-  <!-- profile -->
-  <section id="home" class="jumbotron text-center">
-    <img src="img/myfoto.jpg" alt="Nasrullah" width="200" class="rounded-circle" data-aos="fade-down"
-      data-aos-duration="1000" data-tilt>
-    <div class="wrap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-      <div class="typing">
-        <h1 class="display-3 welcome fs-2 fs-md-1">
-          My Portfolio Website
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <!-- LEFT CONTENT -->
+      <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+        <span class="hero-welcome">WELCOME!</span>
+        <h1 class="hero-title">
+          I Am <span id="typing-text"></span>
         </h1>
-        <h1 class="arul fs-3 fs-md-2">
-          Nasrullah Akbar Fadriansyah
-        </h1>
-        <h1 class="text text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
-          style="font-size: 1.5rem; color: white;">I am <span id="typing-text"></span></h1>
+        <p class="hero-description">
+          I'm a Web Developer with extensive experience for over 5 years.
+          My expertise is to create and Websites design, graphic design and many more.
+        </p>
+      </div>
+      <!-- RIGHT IMAGE -->
+      <div class="hero-right" rounded data-aos="fade-left" data-aos-duration="1000">
+        <img src="img/my.png" alt="Nasrullah">
       </div>
     </div>
   </section>
-  <!-- profile end -->
+  <!-- END HERO -->
 
   <!-- ABOUT ME -->
-  <section id="about" class="py-5">
+  <section id="about" class="section-soft">
     <div class="container">
       <div class="row text-center mb-5">
         <div class="col" data-aos="fade-up" data-aos-duration="1000">
@@ -85,13 +91,13 @@
           <div class="about-grid">
             <div class="about-item">
               <div class="about-emoji">🔭</div>
-              <div class="about-text">
+              <div class="about-text" data-aos="fade-up" data-aos-delay="100">
                 <h5>Currently working on:</h5>
                 <p>A campus mobile app project called <strong>GoTrush</strong> (an online waste collection service app),
                   with an idea similar to ride-hailing apps. It's really exciting!</p>
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up" data-aos-delay="200">
               <div class="about-emoji">🌱</div>
               <div class="about-text">
                 <h5>Currently learning:</h5>
@@ -99,7 +105,7 @@
                   stage, wish me luck! 🫡</p>
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up" data-aos-delay="300">
               <div class="about-emoji">👯</div>
               <div class="about-text">
                 <h5>Open to collaborate on:</h5>
@@ -108,7 +114,7 @@
                   📬</p>
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up" data-aos-delay="400">
               <div class="about-emoji">❓</div>
               <div class="about-text">
                 <h5>Looking for help with:</h5>
@@ -116,7 +122,7 @@
                   mobile apps. 😅</p>
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up" data-aos-delay="500">
               <div class="about-emoji">💬</div>
               <div class="about-text">
                 <h5>Ask me about:</h5>
@@ -124,7 +130,7 @@
                   campus <strong>IT Bootcamp IoT Competition</strong>, and I'm happy to share! 🏆</p>
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up" data-aos-delay="600">
               <div class="about-emoji">⚡</div>
               <div class="about-text">
                 <h5>Fun fact:</h5>
@@ -152,19 +158,19 @@
       <div class="row justify-content-center">
 
         <!-- CARD 1 -->
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-tilt>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100" data-tilt>
           <div class="card">
             <img src="img/cvnasrullah.jpg" class="card-img-top" alt="foto-1">
             <div class="card-body text-center">
               <h5 class="card-title">My CV</h5>
               <p class="card-text">This is my CV showcasing my skills, education, and experience.</p>
-              <a href="img/cvnasrullah.jpg" class="button_portfolio" target="_blank">View Image</a>
+              <a href="img/cvnasrullah.jpg" class="button_portfolio" target="_blank">View CV</a>
             </div>
           </div>
         </div>
 
         <!-- CARD 2 -->
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-tilt>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200" data-tilt>
           <div class="card">
             <img src="img/foto-2.jpg" class="card-img-top" alt="foto-2">
             <div class="card-body text-center">
@@ -176,7 +182,7 @@
         </div>
 
         <!-- CARD 3 -->
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-tilt>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" data-tilt>
           <div class="card">
             <img src="img/foto-3.jpeg" class="card-img-top" alt="foto-3">
             <div class="card-body text-center">
@@ -203,42 +209,48 @@
         <div class="skills-left" data-aos="fade-right" data-aos-duration="1000">
           <h3 class="mb-4 text-center">Education</h3>
           <!-- BELAJAR 1 -->
-          <div class="belajar">
-            <div class="line">
-              <div></div>
+          <a href="https://smpn127jakarta.sch.id" target="_blank" class="education-link">
+            <div class="belajar education-item" data-aos="fade-up" data-aos-delay="100">
+              <div class=" line">
+                <div></div>
+              </div>
+              <div class="belajar-info">
+                <h4 class="belajar-title">SMPN 127 Jakarta</h4>
+                <p>Student</p>
+                <h4 class="belajar-tahun">2017 - 2020</h4>
+              </div>
             </div>
-            <div class="belajar-info">
-              <h4 class="belajar-title">SMPN 127 Jakarta</h4>
-              <p>Student</p>
-              <h4 class="belajar-tahun">2017 - 2020</h4>
-            </div>
-          </div>
+          </a>
           <!-- END BELAJAR 1 -->
 
           <!-- BELAJAR 2 -->
-          <div class="belajar">
-            <div class="line">
-              <div></div>
+          <a href=https://www.smkn35jkt.sch.id target="_blank" class="education-link">
+            <div class="belajar education-item" data-aos="fade-up" data-aos-delay="250">
+              <div class=" line">
+                <div></div>
+              </div>
+              <div class="belajar-info">
+                <h4 class="belajar-title">SMKN 35 Jakarta</h4>
+                <p>Student</p>
+                <h4 class="belajar-tahun">2020 - 2023</h4>
+              </div>
             </div>
-            <div class="belajar-info">
-              <h4 class="belajar-title">SMKN 35 Jakarta</h4>
-              <p>Student</p>
-              <h4 class="belajar-tahun">2020 - 2023</h4>
-            </div>
-          </div>
+          </a>
           <!-- END BELAJAR 2 -->
 
           <!-- BELAJAR 3 -->
-          <div class="belajar">
-            <div class="line">
-              <div></div>
+          <a href="https://bsi.ac.id" target="_blank" class="education-link">
+            <div class="belajar education-item" data-aos="fade-up" data-aos-delay="400">
+              <div class=" line">
+                <div></div>
+              </div>
+              <div class="belajar-info">
+                <h4 class="belajar-title">BSI University</h4>
+                <p>Student</p>
+                <h4 class="belajar-tahun">2023 - 2027</h4>
+              </div>
             </div>
-            <div class="belajar-info">
-              <h4 class="belajar-title">BSI University</h4>
-              <p>Student</p>
-              <h4 class="belajar-tahun">2023 - 2027</h4>
-            </div>
-          </div>
+          </a>
           <!-- END BELAJAR 3 -->
         </div>
         <div class="skills-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
@@ -246,18 +258,51 @@
           <p class="text-center">Here are some of the programming languages I've learned.</p>
           <div class="skills-list">
             <ul>
-              <li><a href="https://docs.python.org/3/" target="_blank" rel="noopener">Python</a></li>
-              <li><a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" rel="noopener">HTML</a></li>
-              <li><a href="https://developer.mozilla.org/docs/Web/CSS" target="_blank" rel="noopener">CSS</a></li>
-              <li><a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank"
-                  rel="noopener">JavaScript</a></li>
-              <li><a href="https://www.php.net/manual/en/" target="_blank" rel="noopener">PHP</a></li>
-            </ul>
-            <ul>
-              <li><a href="https://en.cppreference.com/w/" target="_blank" rel="noopener">C++</a></li>
-              <li><a href="https://dart.dev/guides" target="_blank" rel="noopener">Dart</a></li>
-              <li><a href="https://docs.github.com/" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="https://docs.oracle.com/javase/" target="_blank" rel="noopener">Java</a></li>
+              <li data-aos="zoom-in" data-aos-delay="100">
+                <a href="https://docs.python.org/3/" target="_blank">
+                  <i class="fa-brands fa-python"></i> Python
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="150">
+                <a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank">
+                  <i class="fa-brands fa-html5"></i> HTML
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="200">
+                <a href="https://developer.mozilla.org/docs/Web/CSS" target="_blank">
+                  <i class="fa-brands fa-css3-alt"></i> CSS
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="250">
+                <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank">
+                  <i class="fa-brands fa-js"></i> JavaScript
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="300">
+                <a href="https://www.php.net/manual/en/" target="_blank">
+                  <i class="fa-brands fa-php"></i> PHP
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="350">
+                <a href="https://en.cppreference.com/w/" target="_blank">
+                  <i class="fa-solid fa-code"></i> C++
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="400">
+                <a href="https://dart.dev/guides" target="_blank">
+                  <i class="fa-solid fa-bullseye"></i> Dart
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="450">
+                <a href="https://docs.github.com/" target="_blank">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </li>
+              <li data-aos="zoom-in" data-aos-delay="500">
+                <a href="https://docs.oracle.com/javase/" target="_blank">
+                  <i class="fa-brands fa-java"></i> Java
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -265,6 +310,61 @@
     </div>
   </section>
   <!-- END SKILLS -->
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="py-5">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="fw-bold certificates-title" data-aos="fade-down" data-aos-duration="900">
+            📜 Certificates & Achievements
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+          <div class="card shadow-sm h-100">
+            <img src=" img/foto-1.jpg" class="card-img-top" alt="Dicoding Certificate">
+            <div class="card-body text-center">
+              <h5 class="card-title">Networking Academy</h5>
+              <p class="card-text">CCNA | Jan 2025</p>
+              <a href="sertifikat/nasrullah_CCNA_cisco.pdf" target="_blank" class="btn btn-outline-primary btn-sm">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="250">
+          <div class="card shadow-sm h-100">
+            <img src="img/bootcamp.jpg" class="card-img-top" alt="ESP32 Project Award">
+            <div class="card-body text-center">
+              <h5 class="card-title">Best IoT Project</h5>
+              <p class="card-text">BSI Bootcamp | July 2025</p>
+              <a href="img/bootcamp.jpg" target="_blank" class="btn btn-outline-primary btn-sm">View Image</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+          <div class="card shadow-sm h-100">
+            <img src="img/github.png" class="card-img-top" alt="GitHub Contribution Badge">
+            <div class="card-body text-center">
+              <h5 class="card-title">100+ Commits</h5>
+              <p class="card-text">GitHub Open Source | 2023</p>
+              <a href="https://github.com/Nasrullah-Akbar-Fadriansyah" target="_blank"
+                class="btn btn-outline-primary btn-sm">View
+                Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CERTIFICATES -->
 
   <!-- CONTACT -->
   <section id="contact">
@@ -346,72 +446,42 @@
   </section>
   <!-- AKHIR CONTACT -->
 
-  <!-- CERTIFICATES -->
-  <section id="certificates" class="py-5">
-    <div class="container">
-      <div class="row text-center mb-5">
-        <div class="col" data-aos="fade-up" data-aos-duration="1000">
-          <h2 class="fw-bold">📜 Certificates & Achievements</h2>
-        </div>
-      </div>
-      <div class="row">
-
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
-          <div class="card shadow-sm h-100">
-            <img src="img/foto-1.jpg" class="card-img-top" alt="Dicoding Certificate">
-            <div class="card-body text-center">
-              <h5 class="card-title">Networking Academy</h5>
-              <p class="card-text">CCNA | Jan 2025</p>
-              <a href="sertifikat/nasrullah_CCNA_cisco.pdf" target="_blank" class="btn btn-outline-primary btn-sm">View
-                Certificate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          <div class="card shadow-sm h-100">
-            <img src="img/bootcamp.jpg" class="card-img-top" alt="ESP32 Project Award">
-            <div class="card-body text-center">
-              <h5 class="card-title">Best IoT Project</h5>
-              <p class="card-text">BSI Bootcamp | July 2025</p>
-              <a href="img/bootcamp.jpg" target="_blank" class="btn btn-outline-primary btn-sm">View Image</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-          <div class="card shadow-sm h-100">
-            <img src="img/github.png" class="card-img-top" alt="GitHub Contribution Badge">
-            <div class="card-body text-center">
-              <h5 class="card-title">100+ Commits</h5>
-              <p class="card-text">GitHub Open Source | 2023</p>
-              <a href="https://github.com/Nasrullah-Akbar-Fadriansyah" target="_blank"
-                class="btn btn-outline-primary btn-sm">View
-                Profile</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- END CERTIFICATES -->
-
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-icons">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-          <path
-            d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998zm1.5 0c0-4.69 3.808-8.498 8.498-8.498s8.497 3.808 8.497 8.498-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498zm4.715-1.528s1.505-1.502 3.259-3.255c.147-.146.338-.219.53-.219s.384.073.53.219c1.754 1.753 3.259 3.254 3.259 3.254.145.145.217.336.216.527 0 .191-.074.383-.22.53-.293.293-.766.294-1.057.004l-1.978-1.978v6.694c0 .413-.336.75-.75.75s-.75-.337-.75-.75v-6.694l-1.978 1.979c-.29.289-.762.286-1.055-.007-.147-.146-.22-.338-.221-.53-.001-.19.071-.38.215-.524z"
-            fill-rule="nonzero" />
-        </svg>
+  <footer id="footer">
+    <div class="container text-center">
+
+      <!-- CTA TEXT -->
+      <h3 class="footer-title" data-aos="fade-up" data-aos-duration="800">
+        Let's build something meaningful together 🚀
+      </h3>
+
+      <p class="footer-subtitle" data-aos="fade-up" data-aos-delay="150">
+        Interested in collaboration, projects, or just a friendly chat?
+      </p>
+
+      <!-- CTA BUTTON -->
+      <a href="#contact" class="footer-cta" data-aos="zoom-in" data-aos-delay="300">
+        Contact Me
       </a>
+
+      <!-- ICON -->
+      <div class="footer-icons" data-aos="fade-up" data-aos-delay="450">
+        <a href="#home" aria-label="Back to top">
+          <!-- SVG kamu tetap -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24">
+            <path
+              d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998z"
+              fill="none" />
+            <path d="M12 6l-4 4h3v5h2v-5h3z" />
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        © 2024 — Crafted with passion by <strong>Nasrullah Akbar Fadriansyah</strong>
+      </p>
+
     </div>
-    <p>&#169; 2024 - Made with by Nasrullah</p>
   </footer>
   <!-- END FOOTER -->
 
@@ -430,17 +500,15 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      once: true, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
+      once: true,
+      mirror: false,
     });
   </script>
 
   <script type="text/javascript" src="vanilla-tilt.min.js"></script>
   <!-- SweetAlert2 CDN -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
   <script>
-    // Navbar scroll effect
     window.addEventListener('scroll', function () {
       const navbar = document.querySelector('.navbar');
       if (window.scrollY > 50) {
@@ -455,7 +523,7 @@
     const form = document.getElementById('contact-form');
 
     form.addEventListener('submit', e => {
-      e.preventDefault(); // Mencegah reload
+      e.preventDefault();
       const submitButton = form.querySelector('.btn-submit');
       submitButton.disabled = true;
       submitButton.innerHTML = 'Sending...';
@@ -486,8 +554,6 @@
         });
     });
   </script>
-
-
 </body>
 
 </html>
