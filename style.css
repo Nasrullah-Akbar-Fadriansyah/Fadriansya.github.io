@@ -468,6 +468,11 @@ h3 {
   }
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  color: #fff;
+}
+
 /* Belajar Section */
 .belajar .line {
   position: relative;
