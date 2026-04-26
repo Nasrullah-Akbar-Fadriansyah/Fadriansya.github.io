@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
@@ -322,41 +323,59 @@
       </div>
       <div class="row">
 
-        <!-- Card 1 -->
+        <!-- Card 1 (Certificates Collection) -->
         <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
-          <div class="card shadow-sm h-100">
-            <img src=" img/foto-1.jpg" class="card-img-top" alt="Dicoding Certificate">
-            <div class="card-body text-center">
-              <h5 class="card-title">Networking Academy</h5>
-              <p class="card-text">CCNA | Jan 2025</p>
-              <a href="sertifikat/nasrullah_CCNA_cisco.pdf" target="_blank" class="btn btn-outline-primary btn-sm">View
-                Certificate</a>
+          <div class="card shadow-sm h-100 bg-dark text-white border-secondary">
+            <div class="card-img-top bg-gradient d-flex align-items-center justify-content-center"
+              style="height: 220px; background: linear-gradient(135deg, #1f1f3a, #0d0d0d);">
+              <i class="fa-solid fa-certificate text-success" style="font-size: 6rem;"></i>
+            </div>
+            <div class="card-body text-center position-relative">
+              <span class="badge bg-success position-absolute top-0 start-50 translate-middle">Collection</span>
+              <h6 class="text-secondary mt-2 mb-1" style="font-size: 0.85rem;"><i class="fa-solid fa-medal"></i>
+                Achievements</h6>
+              <h5 class="card-title fw-bold text-success mt-2">MY CERTIFICATES</h5>
+              <p class="card-text text-muted mb-3">View professional certificates & awards</p>
+              <button type="button" class="button_portfolio w-100 text-uppercase" data-bs-toggle="modal"
+                data-bs-target="#certGalleryModal">VIEW CERTIFICATES</button>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
+        <!-- Card 2 (Projects Collection) -->
         <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="250">
-          <div class="card shadow-sm h-100">
-            <img src="img/bootcamp.jpg" class="card-img-top" alt="ESP32 Project Award">
-            <div class="card-body text-center">
-              <h5 class="card-title">Best IoT Project</h5>
-              <p class="card-text">BSI Bootcamp | July 2025</p>
-              <a href="img/bootcamp.jpg" target="_blank" class="btn btn-outline-primary btn-sm">View Image</a>
+          <div class="card shadow-sm h-100 bg-dark text-white border-secondary">
+            <div class="card-img-top bg-gradient d-flex align-items-center justify-content-center"
+              style="height: 220px; background: linear-gradient(135deg, #212529, #121212);">
+              <i class="fa-solid fa-laptop-code text-warning" style="font-size: 6rem;"></i>
+            </div>
+            <div class="card-body text-center position-relative">
+              <span class="badge position-absolute top-0 start-50 translate-middle"
+                style="background-color: #ffd700; color: #000; border: 1px solid #b8860b;">Portfolio</span>
+              <h6 class="text-secondary mt-2 mb-1" style="font-size: 0.85rem;"><i class="fa-solid fa-code"></i>
+                Applications</h6>
+              <h5 class="card-title fw-bold text-success mt-2">MY PROJECTS</h5>
+              <p class="card-text text-muted mb-3">Showcase of apps I've built</p>
+              <button type="button" class="button_portfolio w-100 text-uppercase" data-bs-toggle="modal"
+                data-bs-target="#projectGalleryModal">EXPLORE PROJECTS</button>
             </div>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-          <div class="card shadow-sm h-100">
-            <img src="img/github.png" class="card-img-top" alt="GitHub Contribution Badge">
-            <div class="card-body text-center">
-              <h5 class="card-title">100+ Commits</h5>
-              <p class="card-text">GitHub Open Source | 2023</p>
+          <div class="card shadow-sm h-100 bg-dark text-white border-secondary">
+            <div class="card-img-top bg-black d-flex align-items-center justify-content-center" style="height: 220px;">
+              <i class="fa-brands fa-github text-white" style="font-size: 6rem;"></i>
+            </div>
+            <div class="card-body text-center position-relative">
+              <span class="badge bg-secondary position-absolute top-0 start-50 translate-middle">Open Source</span>
+              <h6 class="text-secondary mt-2 mb-1" style="font-size: 0.85rem;"><i class="fa-solid fa-code-commit"></i>
+                Community Contribution</h6>
+              <h5 class="card-title fw-bold text-success mt-2">GITHUB COMMUNITY</h5>
+              <p class="card-text text-muted mb-3">100+ Commits | Open Source</p>
               <a href="https://github.com/Nasrullah-Akbar-Fadriansyah" target="_blank"
-                class="btn btn-outline-primary btn-sm">View
-                Profile</a>
+                class="button_portfolio w-100 text-uppercase text-decoration-none">VISIT PROFILE</a>
             </div>
           </div>
         </div>
@@ -484,6 +503,123 @@
   </footer>
   <!-- END FOOTER -->
 
+  <!-- MODAL GALLERY SERTIFIKAT -->
+  <div class="modal fade" id="certGalleryModal" tabindex="-1" aria-labelledby="certGalleryModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="certGalleryModalLabel">My Certificates</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row text-center">
+            <!-- Cert Item 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card bg-dark text-white border-secondary h-100" style="cursor: pointer;"
+                onclick="openCertDetail('sertifikat/nasrullah_CCNA_cisco.pdf', 'Networking Academy', 'CCNA | Jan 2025', 'pdf')">
+                <img src="img/foto-1.jpg" class="card-img-top" alt="CCNA" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                  <h6 class="card-title text-success">Networking Academy - CCNA</h6>
+                  <p class="small text-muted">Click to view details</p>
+                </div>
+              </div>
+            </div>
+            <!-- Cert Item 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card bg-dark text-white border-secondary h-100" style="cursor: pointer;"
+                onclick="openCertDetail('sertifikat/SertifikatDigitalmhs_IOT_Nasrullah.pdf', 'Best IoT Project', 'BSI Bootcamp | July 2025', 'pdf')">
+                <img src="img/bootcamp.jpg" class="card-img-top" alt="IoT" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                  <h6 class="card-title text-success">Best IoT Project</h6>
+                  <p class="small text-muted">Click to view details</p>
+                </div>
+              </div>
+            </div>
+            <!-- Cert Item 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card bg-dark text-white border-secondary h-100" style="cursor: pointer;"
+                onclick="openCertDetail('sertifikat/IBMDesign20260425-31-la9sw3.pdf', 'IBM Project', ' Course | Aug 2025', 'pdf')">
+                <img src="img/ibm.jpeg" class="card-img-top" alt="IBM" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                  <h6 class="card-title text-success">IBM Project</h6>
+                  <p class="small text-muted">Click to view details</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL GALLERY PROJECT -->
+  <div class="modal fade" id="projectGalleryModal" tabindex="-1" aria-labelledby="projectGalleryModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="projectGalleryModalLabel">My Applications & Projects</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row text-center">
+            <!-- Project Item 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card bg-dark text-white border-secondary h-100">
+                <div class="card-img-top bg-gradient d-flex align-items-center justify-content-center"
+                  style="height: 200px; background: linear-gradient(135deg, #1a1a1a, #0d0d0d); position: relative;">
+
+                  <i class="fa-solid fa-mobile-screen-button text-success" style="font-size: 5rem;"></i>
+
+                  <span class="badge bg-success" style="position: absolute; top: 10px; right: 10px;">
+                    <i class="fa-solid fa-copyright"></i> Best Project
+                  </span>
+                </div>
+
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title text-success fw-bold">GoTrash App</h5>
+                  <p class="small text-muted mb-3">Mobile Waste Collection Service</p>
+
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success btn-sm"
+                      onclick="openCertDetail('sertifikat/manual_book_gotrash.pdf', 'GoTrash App', 'Dokumentasi Manual Book & Teknis', 'pdf', 'projectGalleryModal')">
+                      <i class="fa-solid fa-file-pdf me-1"></i> View Manual Book
+                    </button>
+                    <button onclick="bukaVerifikasiHKI()" class="btn btn-outline-warning btn-sm">
+                      <i class="fa-solid fa-shield-check me-1"></i> Verifikasi Keaslian HKI ↗
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DETAIL SERTIFIKAT / PROJECT -->
+  <div class="modal fade" id="certDetailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-success" id="certDetailTitle">Detail Project</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="certDetailImg" src="" alt="Certificate" class="img-fluid rounded d-none" style="max-height: 60vh;">
+          <iframe id="certDetailPdf" src="" width="100%" height="500px" class="d-none rounded border-0"></iframe>
+          <h4 id="certDetailName" class="mt-4 mb-2 fw-bold text-white"></h4>
+          <p id="certDetailDesc" class="text-muted"></p>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button class="btn btn-secondary" onclick="backToGallery()">Back to Gallery</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- BOOTSTRAP JAVASCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -564,6 +700,113 @@
       });
     }
     form.addEventListener("submit", handleSubmit)
+  </script>
+  <script>
+    let currentGalleryId = 'certGalleryModal';
+
+    function openCertDetail(fileUrl, title, desc, type, sourceGallery = 'certGalleryModal') {
+      currentGalleryId = sourceGallery;
+
+      // Sembunyikan Gallery Modal yang sedang aktif
+      var galleryModalEl = document.getElementById(currentGalleryId);
+      if (galleryModalEl) {
+        var galleryModal = bootstrap.Modal.getInstance(galleryModalEl);
+        if (galleryModal) {
+          galleryModal.hide();
+        }
+      }
+
+
+      // Atur Data Detail
+      document.getElementById('certDetailName').innerText = title;
+      document.getElementById('certDetailDesc').innerText = desc;
+
+      var imgEl = document.getElementById('certDetailImg');
+      var pdfEl = document.getElementById('certDetailPdf');
+
+      if (type === 'img') {
+        imgEl.src = fileUrl;
+        imgEl.classList.remove('d-none');
+        pdfEl.classList.add('d-none');
+        pdfEl.src = '';
+      } else if (type === 'pdf') {
+        pdfEl.src = fileUrl;
+        pdfEl.classList.remove('d-none');
+        imgEl.classList.add('d-none');
+        imgEl.src = '';
+      }
+
+      // Tampilkan Detail Modal
+      // timeout kecil agar transisi hide modal sebelumnya selesai
+      setTimeout(function () {
+        var detailModalEl = document.getElementById('certDetailModal');
+        var detailModal = bootstrap.Modal.getInstance(detailModalEl) || new bootstrap.Modal(detailModalEl);
+        detailModal.show();
+      }, 400);
+    }
+
+    function backToGallery() {
+      // Sembunyikan Detail Modal
+      var detailModalEl = document.getElementById('certDetailModal');
+      var detailModal = bootstrap.Modal.getInstance(detailModalEl);
+      if (detailModal) {
+        detailModal.hide();
+      }
+
+      // Tampilkan kembali Gallery Modal yang terakhir dibuka
+      setTimeout(function () {
+        var galleryModalEl = document.getElementById(currentGalleryId);
+        if (galleryModalEl) {
+          var galleryModal = bootstrap.Modal.getInstance(galleryModalEl) || new bootstrap.Modal(galleryModalEl);
+          galleryModal.show();
+        }
+      }, 400);
+
+      // Reset embed contents
+      setTimeout(function () {
+        document.getElementById('certDetailImg').src = '';
+        document.getElementById('certDetailPdf').src = '';
+      }, 500);
+    }
+
+    function bukaVerifikasiHKI() {
+      Swal.fire({
+        title: 'Verifikasi HKI GoTrash',
+        html: `
+            <p>Jika hasil tidak otomatis muncul, silakan copy kata kunci di bawah dan tempel di kolom pencarian PDKI (Kategori: <b>Hak Cipta</b>):</p>
+            <div class="input-group mb-3">
+                <input type="text" id="copyKeyword" class="form-control text-center bg-dark text-white border-secondary" value="Go-Trash v.1.0" readonly>
+                <button class="btn btn-outline-success" onclick="copyToClipboard()">Copy</button>
+            </div>
+        `,
+        icon: 'info',
+        background: '#1a1a1a',
+        color: '#ffffff',
+        showCancelButton: true,
+        confirmButtonColor: '#198754',
+        cancelButtonColor: '#6c757d',
+        confirmButtonText: 'Buka Situs PDKI',
+        cancelButtonText: 'Batal'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.open("https://pdki-indonesia.dgip.go.id/search?type=copyright&q=GoTrash", "_blank");
+        }
+      });
+    }
+
+    // Fungsi tambahan untuk tombol Copy
+    function copyToClipboard() {
+      const copyText = document.getElementById("copyKeyword");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // Untuk perangkat mobile
+      navigator.clipboard.writeText(copyText.value);
+
+      // Memberi tahu user kalau sudah tersalin tanpa menutup pop-up utama
+      const btn = event.target;
+      const originalText = btn.innerHTML;
+      btn.innerHTML = "Copied!";
+      setTimeout(() => { btn.innerHTML = originalText; }, 2000);
+    }
   </script>
 </body>
 

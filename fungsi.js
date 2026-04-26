@@ -1,5 +1,5 @@
 new TypeIt("#typing-text", {
-  strings: ["Human", "Student", "Gamer"],
+  strings: ["Vibe coder", "Student", "Human"],
   speed: 120,
   deleteSpeed: 80,
   breakLines: false,
